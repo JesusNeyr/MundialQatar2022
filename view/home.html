@@ -15,10 +15,7 @@
             <ul class="mobile desktop">
                 <li><a href="/view/home.html">Home</a></li>
                 <li><a href="/view/login.html">Login</a></li>
-                <li><a href="">al</a></li>
-                <li><a href="">gin</a></li>
-                <li><a href="">me</a></li>
-                <li><a href="">Lsn</a></li>
+                
             </ul>
             <div class="burger" id="burger">
                 <img src="../public/img/burguer.png" alt="menu_burquer" srcset="">
@@ -26,8 +23,8 @@
         </nav>
     </header>
     <main>
-        <section class="busqueda">
-            <form class="search_jugador hidden">
+        <section class="contenedor_form">
+            <form name="form" class="form_general  hidden">
                 <fieldset class="campo_de_busqueda">
                     <input type="text" name="jugador" id="jugador" placeholder="encuentra a tu jugador">
                     <span ></span>
@@ -35,14 +32,14 @@
                 </fieldset>
             </form>
         </section>
-        <section class="jugador">
-            <article>
-                <h3>Messirve</h3>
-            </article>
+        <section class="jugador" id="section-jugador" name="contenedor_jugador_buscado">
+
         </section>
     </main>
-
+    
+    
 </body>
 </html>
-
-<script src="../js/eventos.js"></script>
+<script src="../js/eventos_home.js"></script>
+<script src="../js/eventos_nav.js"></script>
+<script src="../js/validar_forms.js"></script>

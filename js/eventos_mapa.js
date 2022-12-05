@@ -1,0 +1,8 @@
+const ul=document.querySelector("ul")
+const li=document.createElement("li")
+const a=document.createElement("a")
+const contenido=document.createTextNode("log out")
+a.appendChild(contenido)
+li.appendChild(a)
+ul.appendChild(li)
+a.setAttribute("href","/view/home.html")

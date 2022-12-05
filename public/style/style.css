@@ -102,6 +102,11 @@ body{
 }
 main{
     margin-top: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
 }
 /* mensdaje de erro en form */
 .invalido{
@@ -114,42 +119,94 @@ main{
 }
 /* fin del msj de error */
 /* estilos al form */
-.busqueda{
+.contenedor_form{
     display: flex;
     justify-content: center;
+    width: 90%;
+    height: 100vh;
+    min-width:400px ;
 }
-.search_jugador{
+
+/* estilando el formularios */
+.form_general{
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 50vh;
+    flex-direction: column;
+    width: 100vw;
     min-width: 300px;
-    background-color: aliceblue;
-    padding: 10px;
+    background-color: rgba(240, 248, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(51, 110, 161, 0.5);
 }
-.search_jugador>fieldset, .search_jugador>fieldset>input{
+.form_general>fieldset{
+    width: 90%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+.form_general>fieldset, .form_general>fieldset>input{
     border: 0;
     outline: none;
+    margin-bottom: 20px;
 }
-.search_jugador>fieldset>input{
+.form_general>fieldset>input{
     padding: 5px 10px;
     border: 1px solid;
     box-shadow: 2px 0px 10px;
     margin: 10px 0;
+    border-radius: 5px;
+    font-size: 1em;
+  
+}
+.form_general>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+.form_general>div>a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: 0;
+}
+.form_general>div>a:hover{
+    background-color: rgb(80, 79, 79);
+    color: #fff;
+    transition: all 0.5s;
 }
 
-/* fin de estilos form */
+/* fin de estilos form de login*/
+
 @media (min-width: 500px), handheld and (orientation: landscape) { 
     .desktop{
         display: flex; 
         align-items: center;
         justify-content: space-evenly;
-        width: 60%;
-        margin-top: 3%;
+        width: 14%;
+        margin-top: 20px;
         border-right: 1px solid gray;
         padding: 4px;
     }
     .burger{
         display: none;
+    }
+    .contenedor_form{
+        width:50vw;
+    }
+    .contenedor_form>form{
+        width: 30vw;
+        padding: 20px;
     }
 }
