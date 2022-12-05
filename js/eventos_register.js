@@ -63,15 +63,19 @@ password_confirm.addEventListener("input",(element)=>{
 
 })
 form.addEventListener("submit",(element)=>{
+    element.preventDefault()
     if (pass_user.value !== password_confirm.value && password_confirm!==pass_user) {
-        element.preventDefault()
+        alert("contraseñas diferentes")
     }else{
         let key=email.value
         let valor=pass_user.value
-        localStorage.setItem(key,valor)
+        if (key && valor) {
+            localStorage.setItem(key,valor)
+            window.location.href="../view/login.html"
+            alert("Registrado")
+        }
         
     }
 })
 
-// para redirigir a otra pagina al hacer el login
-// window.location.href="a donde los vas a mandar"
+console.log(localStorage)
