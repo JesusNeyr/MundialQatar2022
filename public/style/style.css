@@ -9,7 +9,7 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;    
+    font-family: 'Raleway', sans-serif;
 }
 
 body{
@@ -188,7 +188,13 @@ main{
 }
 
 /* fin de estilos form de login*/
-
+/* map */
+#map { 
+    height: 60vh;
+    width: 80vw;
+    margin: 10em auto;
+    border-radius: 10px;
+}
 @media (min-width: 500px), handheld and (orientation: landscape) { 
     .desktop{
         display: flex; 
